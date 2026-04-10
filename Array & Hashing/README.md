@@ -6,3 +6,4 @@ This folder contains solutions for Arrays & Hashing problems.
 - Contains Duplicate
 - Valid Anagram
 - Two Sum
+- Group Anagrams
