@@ -1,19 +1,52 @@
 public class Solution {
     public IList<IList<string>> GroupAnagrams(string[] strs) {
         
-        var Anagrams = new Dictionary<string, List<string>>();
+        var anagrams = new Dictionary<string, List<string>>();
 
-        foreach (var s in strs) {
-            var sortedS = new string(s.OrderBy(c => c).ToArray());
+        foreach(var s in strs) 
+        {
+            int[] count = new int[26];
 
-            if (!Anagrams.ContainsKey(sortedS)) 
-                Anagrams[sortedS] = new List<string>();
+            foreach(var c in s) 
+                count[c - 'a']++;
 
-            Anagrams[sortedS].Add(s);
+            string key = string.Join(",", count);
+
+            if(!anagrams.ContainsKey(key)) 
+                anagrams[key] = new List<string>();
+
+            anagrams[key].Add(s);
         }
 
-        return Anagrams.Values
+        return anagrams.Values
             .Select(x => (IList<string>)x)
-            .ToList();    
+            .ToList();
     }
 }
+
+
+
+// Another Solution
+// --------------------------------
+
+
+
+// public class Solution {
+//     public IList<IList<string>> GroupAnagrams(string[] strs) {
+        
+//         var Anagrams = new Dictionary<string, List<string>>();
+
+//         foreach (var s in strs) {
+//             var sortedS = new string(s.OrderBy(c => c).ToArray());
+
+//             if (!Anagrams.ContainsKey(sortedS)) 
+//                 Anagrams[sortedS] = new List<string>();
+
+//             Anagrams[sortedS].Add(s);
+//         }
+
+//         return Anagrams.Values
+//             .Select(x => (IList<string>)x)
+//             .ToList();    
+//     }
+// }
