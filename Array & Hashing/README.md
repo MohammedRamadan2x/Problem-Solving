@@ -8,4 +8,5 @@ This folder contains solutions for Arrays & Hashing problems.
 - Two Sum
 - Group Anagrams
 - Top K Frequent Elements
-- Encode and Decode Strings 
+- Encode and Decode Strings
+- Concatenation of Array
