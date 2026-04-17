@@ -12,3 +12,4 @@ This folder contains solutions for Arrays & Hashing problems.
 - Concatenation of Array
 - Products of Array Except Self
 - Valid Sudoku
+- Longest Consecutive Sequence
