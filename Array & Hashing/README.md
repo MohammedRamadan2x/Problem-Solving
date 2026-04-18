@@ -13,3 +13,4 @@ This folder contains solutions for Arrays & Hashing problems.
 - Products of Array Except Self
 - Valid Sudoku
 - Longest Consecutive Sequence
+- Replace Elements With Greatest Element On Right Side
