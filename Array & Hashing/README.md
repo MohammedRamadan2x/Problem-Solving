@@ -14,3 +14,4 @@ This folder contains solutions for Arrays & Hashing problems.
 - Valid Sudoku
 - Longest Consecutive Sequence
 - Replace Elements With Greatest Element On Right Side
+- Max Consecutive Ones
