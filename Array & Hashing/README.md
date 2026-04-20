@@ -15,3 +15,4 @@ This folder contains solutions for Arrays & Hashing problems.
 - Longest Consecutive Sequence
 - Replace Elements With Greatest Element On Right Side
 - Max Consecutive Ones
+- Find the Difference of Two Arrays
