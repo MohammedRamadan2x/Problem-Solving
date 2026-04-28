@@ -3,3 +3,4 @@
 This folder contains solutions for Stack problems.
 
 ## Problems:
+- Valid Parentheses
