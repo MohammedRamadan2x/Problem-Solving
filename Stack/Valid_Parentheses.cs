@@ -21,3 +21,32 @@ public class Solution {
         return openBrackets.Count == 0;
     }
 }
+
+
+
+
+// Another Solution
+// ---------------------------------
+
+// public class Solution {
+//     public bool IsValid(string s) {
+//         var stack = new Stack<char>();
+//         var map = new Dictionary<char, char>
+//         {
+//             { ')', '(' },
+//             { ']', '[' },
+//             { '}', '{' }
+//         };
+
+//         foreach (char c in s) {
+//             if (c == '(' || c == '[' || c == '{') stack.Push(c);
+//             else {
+//                 if (stack.Count == 0) return false;
+//                 if (stack.Peek() != map[c]) return false;
+//                 stack.Pop();
+//             }
+//         }
+
+//         return stack.Count == 0;
+//     }
+// }
